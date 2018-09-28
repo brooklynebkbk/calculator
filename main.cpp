@@ -7,30 +7,30 @@ int main ()
 {
 
     //initialize local variables
-    float firstInputValue, secondInputValue, resolution;
-    char operand;
+    float a, b, r;
+    char o;
     //instruct user to input values
     //grab values
     cout << "Please enter a number:";
-    cin >> firstInputValue;
+    cin >> a;
     cout << "Please enter an operator:";
-    cin >> operand;
+    cin >> o;
     cout << "Please enter another number:";
-    cin >> secondInputValue;
+    cin >> b;
     //determine the kind of operation to be used
     //operate on the values given accordingly
     //catch values that are inoperable and print to terminal
-    if (operand== '+')
-    {resolution = firstInputValue+secondInputValue;
-    cout << firstInputValue << operand << secondInputValue << "=" << resolution << ".\n";}
-    else if (operand== '-')
-    {resolution = firstInputValue-secondInputValue;
-    cout << firstInputValue << operand << secondInputValue << "=" << resolution << ".\n";}
-    else if (operand== '*')
-    {resolution = firstInputValue*secondInputValue;
-    cout << firstInputValue << operand << secondInputValue << "=" << resolution << ".\n";}
-    else if (operand== '/')
-    {resolution = firstInputValue/secondInputValue;}
+    if (o== '+')
+    {r = a+b;
+    cout << a << o << b << "=" << r << ".\n";}
+    else if (o== '-')
+    {r = a-b;
+    cout << a << o << b << "=" << r << ".\n";}
+    else if (o== '*')
+    {r = a*b;
+    cout << a << o << b << "=" << r << ".\n";}
+    else if (o== '/')
+    {r = a/b;}
     else {printf ("Sorry, this calculator isn't that smart.");};
 
     return 0;
